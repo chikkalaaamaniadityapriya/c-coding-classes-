@@ -1,0 +1,17 @@
+//fibonacci series//
+#include<stdio.h>
+int main()
+{
+int n,k;
+long int array[100];
+printf("enter the number of elements\n");
+scanf("%d",&n);
+array[0]=-1;
+array[1]=1;
+printf("FIBONACCI SERIES\n");
+for(k=2,k<=n+1;k++){
+array[k]=array[k-1]+array[k-2];
+printf("%d\n",array[k]);
+}
+return 0;
+}
